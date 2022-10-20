@@ -1,0 +1,12 @@
+{
+  "name": "node-app-midterm-project-janemichelle-solis-bsit3-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Jane Michelle Solis",
+  "license": "ISC"
+}

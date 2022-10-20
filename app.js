@@ -1,2 +1,5 @@
-const fs = require('fs');
-fs.writeFileSync('note.txt', "Hi");
+const write = require ('./write');
+const read = require ('./read');
+const cmd = process.argv[2];
+write (cmd);
+console.log (read());

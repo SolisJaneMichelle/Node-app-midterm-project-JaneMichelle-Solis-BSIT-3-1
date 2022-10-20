@@ -1,6 +1,8 @@
 const write = require ('./write');
 const read = require ('./read');
 const add = require ('./add')
+const present = require ('./present')
+const del = require ('./del')
 //Get user input
 const data = process.argv
 var note ={}
@@ -21,4 +23,11 @@ if(data[2] == 'read') {
     const present = require ('./present')
     present (read())
 }
-
+if (data[2] == 'delete') {
+    //Get oldNote values
+    const oldNote = read()
+    //Get id to delete from notes
+    const id = data[3]
+    del (id, oldNote)
+    present (read())
+}
